@@ -8,7 +8,7 @@ class Employee {
   }
 
   describe() {
-    return this.name + " works in " + this.department + ".";
+    return this.name + " works in " + this.department + " department.";
   }
 }
 
@@ -20,7 +20,7 @@ class Manager extends Employee {
   }
 
   describe() {
-    return this.name + " manages " + this.teamSize + " people in " + this.department + ".";
+    return this.name + " manages " + this.teamSize + " people in " + this.department + " department.";
   }
 }
 
@@ -32,3 +32,7 @@ const emp4 = new Employee("Ethan Brown", "IT Support");
 const emp5 = new Employee("Fatima Singh", "Operations");
 const mgr1 = new Manager("Chloe Rivera", "Engineering", 15);
 const mgr2 = new Manager("George Patel", "Sales", 10);
+
+// Try Output 
+console.log(emp2.describe());
+console.log(mgr1.describe());
