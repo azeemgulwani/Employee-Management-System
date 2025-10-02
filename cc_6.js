@@ -36,3 +36,22 @@ const mgr2 = new Manager("George Patel", "Sales", 10);
 // Try Output 
 console.log(emp2.describe());
 console.log(mgr1.describe());
+
+// Step 5:
+class Company {
+  constructor() {
+    this.employees = [];
+  }
+
+  addEmployee(employee) {
+    this.employees.push(employee);
+  }
+
+  listEmployees() {
+    for (let i = 0; i < this.employees.length; i++) {
+      const info = this.employees[i].describe();
+      console.log(info);
+    }
+  }
+}
+
